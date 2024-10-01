@@ -38,16 +38,16 @@ export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text>Login</Text>
-      {/*Exibe uma mensagem de erro*/}
+      {/*Exibe uma mensagem de erro */}
       {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
-      {/*Campo de entrada para o nome de usuário*/}
+      {/*Campo de entrada para o nome de usuário */}
       <TextInput
         style={styles.input}
         placeholder="Usuário"
         value={username}
         onChangeText={setUsername} //Atualiza o estado com o nome de usuário digitado
       />
-      {/*campo de entrada para senha*/}
+      {/*campo de entrada para senha */}
       <TextInput
         style={styles.input}
         placeholder="Senha"
